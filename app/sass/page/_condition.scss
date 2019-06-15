@@ -1,0 +1,111 @@
+.condition {
+	text-align: center;
+	color: $white;
+
+	&__title {
+		font-weight: 800;
+		font-size: 36px;
+		line-height: 64px;
+
+		&-wrap {
+			padding: 0 200px;
+		}
+
+		&--green {
+			font-size: 75px;
+			line-height: 75px;
+
+			color: $green;
+		}
+
+		&--symbol {
+			font-size: 75px;
+			line-height: 75px;
+		}
+	}
+
+	&__description {
+		font-size: 24px;
+		line-height: 32px;
+
+		&-wrap {
+			padding-top: 5px;
+		}
+	}
+
+	&__list {
+		padding-top: 50px;
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__item {
+		padding: 20px 0;
+		margin-right: 40px;
+
+		position: relative;
+
+		width: 33%;
+
+		background-color: rgba(100, 116, 255, 0.43);
+		border-radius: 6px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+
+		&--extra {
+			&::before {
+				position: absolute;
+				content: '';
+				left: 5%;
+				top: 20%;
+
+				width: 50px;
+				height: 40px;
+
+				background-image: url("../img/cond-1.png");
+				background-repeat: no-repeat;
+			}
+		}
+
+		&--biotic {
+			&::before {
+				position: absolute;
+				content: '';
+				left: 5%;
+				top: 10%;
+
+				width: 64px;
+				height: 64px;
+
+				background-image: url("../img/cond-2.png");
+				background-repeat: no-repeat;
+			}
+		}
+
+		&--mbl {
+			&::before {
+				position: absolute;
+				content: '';
+				left: 15%;
+				top: 15%;
+
+				width: 61px;
+				height: 52px;
+
+				background-image: url("../img/cond-3.png");
+				background-repeat: no-repeat;
+			}
+		}
+	}
+
+	&__text {
+		font-size: 24px;
+		line-height: 32px;
+
+		color: $green;
+	}
+}
