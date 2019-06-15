@@ -1,0 +1,132 @@
+.contest {
+	position: relative;
+
+	padding-top: 90px;
+	padding-bottom: 57px;
+
+	display: flex;
+
+	&::before {
+		position: absolute;
+		content: "";
+		top: 10px;
+		left: -90px;
+
+		width: 1224px;
+		height: 632px;
+
+
+		background-image: url("../img/parallax.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: 1;
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 1px;
+
+		width: 560px;
+		height: 752px;
+
+
+		background-image: url("../img/parallax2.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__big-image {
+
+		flex: 1;
+
+		// background-image: url("../img/money.png");
+		// background-repeat: no-repeat;
+		// background-size: contain;
+
+
+	}
+
+	&__description {
+		flex-direction: column;
+		flex: 2.2;
+
+		text-align: center;
+
+		color: $white;
+	}
+
+	&__title {
+		font-weight: 800;
+		font-size: 56px;
+		line-height: 64px;
+
+		&-wrap {
+			padding: 0 50px;
+		}
+	}
+
+	&__subtitle {
+		font-size: 18px;
+		line-height: 36px;
+
+		&-wrap {
+			margin-top: 15px;
+		}
+	}
+
+	&__date {
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 32px;
+
+		&-wrap {
+			margin-top: 25px;
+		}
+	}
+
+	&__link {
+		padding: 20px 40px;
+
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 72px;
+		text-transform: lowercase;
+
+		color: $white;
+		background: linear-gradient(180deg, #6039FF 0%, #3A19C0 100%);
+		border-radius: 50px;
+		box-shadow: 0px 10px 30px rgba(31, 13, 76, 0.3);
+
+		&-wrap {
+			padding-top: 32px;
+			padding-bottom: 37px;
+			margin: 0 auto;
+
+			max-width: 270px;
+		}
+	}
+
+	&__position {
+		&-list {
+			margin: 0 auto;
+
+			max-width: 310px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&-place {
+			font-size: 18px;
+			line-height: 36px;
+		}
+
+		&-prize {
+			font-size: 36px;
+			line-height: 36px;
+
+			color: $light-blue;
+		}
+	}
+}
