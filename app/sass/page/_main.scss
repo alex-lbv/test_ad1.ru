@@ -5,4 +5,8 @@
 	background-image: url("../img/bg-2.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	@media (max-width: 767px) {
+		padding-top: 115px;
+	}
 }

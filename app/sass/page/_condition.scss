@@ -9,6 +9,14 @@
 
 		&-wrap {
 			padding: 0 200px;
+
+			@media (max-width: 767px) {
+				padding: 0;
+			}
+
+			@media (min-width: 768px) and (max-width: 1200px) {
+				padding: 0 65px;
+			}
 		}
 
 		&--green {
@@ -16,11 +24,27 @@
 			line-height: 75px;
 
 			color: $green;
+
+			@media (max-width: 767px) {
+				font-size: 40px;
+			}
+
+			@media (min-width: 768px) and (max-width: 1200px) {
+				font-size: 55px;
+			}
 		}
 
 		&--symbol {
 			font-size: 75px;
 			line-height: 75px;
+
+			@media (max-width: 767px) {
+				font-size: 40px;
+			}
+
+			@media (min-width: 768px) and (max-width: 1200px) {
+				font-size: 55px;
+			}
 		}
 	}
 
@@ -39,6 +63,14 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+
+		@media (min-width: 768px) and (max-width: 1200px) {
+			flex-direction: column;
+		}
 	}
 
 	&__item {
@@ -51,6 +83,21 @@
 
 		background-color: rgba(100, 116, 255, 0.43);
 		border-radius: 6px;
+
+		@media (max-width: 767px) {
+			margin-right: 0;
+			margin-bottom: 20px;
+
+			width: 100%;
+			max-width: 400px;
+		}
+
+		@media (min-width: 768px) and (max-width: 1200px) {
+			margin-right: 0;
+			margin-bottom: 20px;
+
+			width: 50%;
+		}
 
 		&:last-of-type {
 			margin-right: 0;
@@ -98,6 +145,14 @@
 
 				background-image: url("../img/cond-3.png");
 				background-repeat: no-repeat;
+
+				@media (max-width: 767px) {
+					left: 5%;
+				}
+
+				@media (min-width: 768px) and (max-width: 1200px) {
+					left: 5%;
+				}
 			}
 		}
 	}
