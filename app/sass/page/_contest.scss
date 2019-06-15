@@ -38,17 +38,13 @@
 	}
 
 	&__big-image {
-
 		flex: 1;
-
-		// background-image: url("../img/money.png");
-		// background-repeat: no-repeat;
-		// background-size: contain;
-
-
 	}
 
 	&__description {
+		position: relative;
+		z-index: 2;
+
 		flex-direction: column;
 		flex: 2.2;
 
@@ -131,9 +127,13 @@
 		text-transform: lowercase;
 
 		color: $white;
-		background: linear-gradient(180deg, #6039FF 0%, #3A19C0 100%);
+		background: $blue;
 		border-radius: 50px;
 		box-shadow: 0px 10px 30px rgba(31, 13, 76, 0.3);
+
+		&:hover {
+			background: $dark-blue;
+		}
 
 		&-wrap {
 			padding-top: 32px;

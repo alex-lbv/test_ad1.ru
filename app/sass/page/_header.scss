@@ -20,6 +20,9 @@
 		}
 
 		&--bottom {
+			position: relative;
+			z-index: 2;
+
 			padding-bottom: 37px;
 		}
 	}
@@ -27,6 +30,10 @@
 	&__logo {
 		width: 102px;
 		height: 28px;
+		fill: $white;
+		&:hover {
+			fill: $light-blue;
+		}
 	}
 
 	&__button {
@@ -40,6 +47,10 @@
 		border: none;
 
 		cursor: pointer;
+
+		&:hover {
+			color: $light-blue;
+		}
 	}
 
 	&__link {
@@ -48,5 +59,9 @@
 		line-height: 36px;
 
 		color: $white;
+
+		&:hover {
+			color: $light-blue;
+		}
 	}
 }
