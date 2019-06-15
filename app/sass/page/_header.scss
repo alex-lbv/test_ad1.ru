@@ -1,4 +1,10 @@
 .header {
+	background-image: url("../img/bg.svg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	min-height: 100vh;
+
 	&__content {
 		display: flex;
 		justify-content: space-between;
