@@ -58,12 +58,48 @@
 	}
 
 	&__title {
+		position: relative;
+		z-index: 1;
+
 		font-weight: 800;
 		font-size: 56px;
 		line-height: 64px;
 
 		&-wrap {
 			padding: 0 50px;
+
+			position: relative;
+
+			&::before {
+				position: absolute;
+				content: "";
+				top: -30px;
+				right: 55px;
+
+				width: 128px;
+				height: 128px;
+
+				background: radial-gradient(42.08px at 50% 67.13%, #6039FF 0%, #4522D1 100%);
+				border-radius: 50%;
+			}
+
+			&::after {
+				position: absolute;
+				content: "Только для вебмастеров ad1.ru";
+				top: 9px;
+				right: 42px;
+
+				transform: rotate(-15deg);
+
+				width: 128px;
+				height: 128px;
+
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 18px;
+
+				color: $light-blue;
+			}
 		}
 	}
 
