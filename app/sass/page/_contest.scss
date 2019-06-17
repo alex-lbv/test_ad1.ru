@@ -10,50 +10,89 @@
 		padding-top: 100px;
 	}
 
-	&::before {
-		position: absolute;
-		content: "";
-		top: 10px;
-		left: -90px;
+	// &::before {
+	// 	position: absolute;
+	// 	content: "";
+	// 	top: 10px;
+	// 	left: -90px;
 
-		width: 1224px;
-		height: 632px;
+	// 	width: 1224px;
+	// 	height: 632px;
 
 
-		background-image: url("../img/parallax.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		z-index: 1;
+	// 	background-image: url("../img/parallax.png");
+	// 	background-repeat: no-repeat;
+	// 	background-size: cover;
+	// 	z-index: 1;
 
-		@media (max-width: 767px) {
-			display: none;
-		}
+	// 	@media (max-width: 767px) {
+	// 		display: none;
+	// 	}
 
-		@media (min-width: 768px) and (max-width: 1200px) {
-			display: none;
+	// 	@media (min-width: 768px) and (max-width: 1200px) {
+	// 		display: none;
+	// 	}
+	// }
+
+	// &::after {
+	// 	position: absolute;
+	// 	content: "";
+	// 	top: 0;
+	// 	left: 1px;
+
+	// 	width: 560px;
+	// 	height: 752px;
+
+
+	// 	background-image: url("../img/parallax2.png");
+	// 	background-repeat: no-repeat;
+	// 	background-size: cover;
+
+	// 	@media (max-width: 767px) {
+	// 		display: none;
+	// 	}
+
+	// 	@media (min-width: 768px) and (max-width: 1200px) {
+	// 		display: none;
+	// 	}
+	// }
+
+	&__parallax1 {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: -70px;
+			left: 1px;
+
+			width: 560px;
+			height: 752px;
+
+
+			background-image: url("../img/parallax2.png");
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 	}
 
-	&::after {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: 1px;
+	&__parallax2 {
+		position: relative;
 
-		width: 560px;
-		height: 752px;
+		&::after {
+			position: absolute;
+			content: "";
+			top: -70px;
+			left: -90px;
+
+			width: 1224px;
+			height: 632px;
 
 
-		background-image: url("../img/parallax2.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-
-		@media (max-width: 767px) {
-			display: none;
-		}
-
-		@media (min-width: 768px) and (max-width: 1200px) {
-			display: none;
+			background-image: url("../img/parallax.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: 1;
 		}
 	}
 
