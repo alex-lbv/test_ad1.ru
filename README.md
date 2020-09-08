@@ -1,6 +1,18 @@
 # test_ad1.ru - test task using parallax
-### Installation
+## Installation
 ```sh
-$ yarn / nmp i
-$ gulp / gulp build
+$ yarn
+```
+or
+```sh
+$ npm i
+```
+
+### dev mode
+```sh
+$ gulp
+```
+### Production
+```sh
+$ gulp build
 ```
